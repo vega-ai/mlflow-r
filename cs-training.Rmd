@@ -1,0 +1,21 @@
+---
+title: "CS Training"
+
+params:
+  seed: 12347
+  split_ratio: 0.80
+---
+
+
+```{r setup, message=FALSE, echo=FALSE, warning=FALSE}
+library(mlflow)
+library(tidyverse)
+```
+
+
+### TRAIN MODELS
+
+
+```{r}
+print(params)
+```

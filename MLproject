@@ -1,0 +1,14 @@
+name: MLFlow-Demo
+conda_env: conda.yaml
+
+entry_points:
+  training:
+    parameters:
+      seed: {type: int, default: 12347}
+      split_ratio: {type: double, default: 0.80}
+    command: "Rscript -e \"mlflow::mlflow_source('mlflow-cs-training.R')\" --args --seed={seed} --split_ratio={split_ratio}"
+  backtest:
+    parameters:
+      model: {type: string, default: "p3m-s0m"}
+      data: {type: string, default: "backtest-200907"}
+    command: "Rscript -e \"mlflow::mlflow_source('mlflow-cs-backtest.R')\" --args --model={model} --data={data}"

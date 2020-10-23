@@ -1,0 +1,28 @@
+---
+title: "MLFlow Pipeline"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### Steps
+
+
+```{bash,eval=FALSE}
+mlflow run . -e training --no-conda
+```
+
+
+```{bash,eval=FALSE}
+mlflow run . -e backtest --no-conda
+```
+
+
+
+### References
+
+- http://dsml.squarevilla.com/set-up-and-run-a-r-project-in-mlflow
+- https://developer.ibm.com/tutorials/tracking-machine-learning-models-in-r-with-mlflow/
+- https://github.com/rstudio/mlflow-original/issues/30

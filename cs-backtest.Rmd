@@ -1,0 +1,21 @@
+---
+title: "CS Backtest"
+
+params:
+  model: "backtest_model"
+  data: "backtest_data"
+---
+
+
+```{r setup, message=FALSE, echo=FALSE, warning=FALSE}
+library(mlflow)
+library(tidyverse)
+```
+
+
+### BACKTEST MODELS
+
+
+```{r}
+print(params)
+```
